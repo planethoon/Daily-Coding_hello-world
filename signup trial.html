@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: rgb(228, 228, 228);
+        }
+
+        #signup{
+            margin-left: 500px;
+            margin-right: 500px;
+            border:5px solid black;
+            text-align:center;
+            height: 550px;
+            background-color: white;
+            padding-top: 20px;
+        }
+        h1 { 
+            padding-left:20px;
+            border-bottom: 1px solid grey;
+        }
+        h2{
+            font-size: 30px;
+            padding-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <div id="signup_outside"></div>
+        <div id="signup">
+            <h2>Sign up</h2>
+            <form method="POST">
+                <label for="inforyes">정보제공 동의여부 동의</label>
+                <input type="radio" name="inforyes">
+                <label for="inforno">미동의</label>
+                <input type="radio" name="inforno"><br />
+
+                <label for="name">ID</label><br />
+                <input type="text" name="name" /><br />
+
+                <label for="password">Password</label><br />
+                <input type="password" name="password" /><br />
+
+                <!--<label for="file">Picture</label>
+                <input type="file" name="file" /><br />-->
+
+                <label for="email">E-Mail</label><br />
+                <input type="email" name="email"><br />
+
+                <label for="emailcheckbox">If you want to receive our Newsletters,<br /> please check the blank.</label>
+                <input type="checkbox" name="emailcheckbox"><br />
+
+                <input type="image" src="https://via.placeholder.com/100x120"><br />
+                <input type="hidden"><br />
+                <input type="submit" />
+                <input type="reset">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
