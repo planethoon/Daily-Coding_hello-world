@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #topbar > div {
+            width: 80px; height:25px;
+            border: 1px solid black;
+            float: right;
+            text-align: center;
+            line-height:25px;
+            color: blue;
+        }
+        #topbar > div:nth-child(2) {
+            width: 100px;
+        }
+        #topbar > div:first-child {
+            border-radius: 0 10px 10px 0;
+        }
+        #topbar > div:last-child {
+            border-radius: 10px 0 0 10px;
+        }
+        
+        /* #middlebar {
+            position:relative;
+        } */
+        #middlebar > div {
+            width: 100px; height: 50px;
+            line-height: 50px;
+            border: 1px solid black;
+            color: blue;
+            float: right;
+            display: block;
+            text-align: center;
+            overflow: hidden;
+        }
+        #middlebar > div:first-child {
+            border-radius: 0 15px 15px 0;
+        }
+        #middlebar > div:last-child {
+            border-radius : 15px 0 0 15px;
+        }
+
+
+        body {
+            width: 960px;
+            margin: 0 auto; 
+        }
+        #wrap {
+            overflow: hidden;
+        }
+        #articles {
+            width: 720px;
+            float: left;
+        }
+        #articles > div {
+            width: 700px; height: 250px;
+            border: 2px solid black;
+            margin: 5px 0;
+            padding-left: 10px;
+
+        }
+        #aside1, #aside2 {
+            width: 240px;
+            float: left;
+            text-align:center;
+            box-sizing: border-box;
+        }
+        #aside1 > div {
+            border: 2px solid black;
+            margin-top: 5px;
+            float: left;
+            width: 120px;
+            box-sizing: border-box;
+        }
+        #aside1 > div:nth-child(2) {
+            background-color: black;
+            color: white;
+
+        }
+        #aside2 > div {
+            margin: 0;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            width: 240px; height:70px;
+            box-sizing: border-box;
+            /* line-height: 70px; */
+            text-align: left;
+            padding: 5px;
+
+        }
+        div > img {
+            line-height:70px;
+            text-align: center;
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+
+        .clear {
+            clear:both;
+        }
+        #footer {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- top bar -->
+    <div id="topbar">
+        <div>Data</div>
+        <div>Simulation</div>
+        <div>Game</div>
+        <div>Mobile</div>
+        <div>Web</div>
+    </div>
+
+    <!-- header -->
+    <div id="header"><h1>Header</h1></div>
+
+    <!-- navigation -->
+    <div id="nav"><h2>Navigator</h2></div>
+    <!-- middle bar -->
+    <div id="middlebar">
+        <div>Node.js</div>
+        <div>jQuery</div>
+        <div>JavaScript</div>
+        <div>CSS3</div>
+        <div>HTML5</div>
+    </div>
+    <div class="clear"></div>
+    <div id="wrap">
+        <!-- articles -->
+        <div id="articles">
+            <div class="art">
+                <h3>Article</h2>
+                <p>Article Examples</p>
+            </div>
+            <div class="art">
+                <h3>Article</h2>
+                <p>Article Examples</p>
+            </div>
+            <div class="art">
+                <h3>Article</h2>
+                <p>Article Examples</p>
+            </div>
+        </div>
+
+        
+        <!-- aside -->
+        <div id="aside1">
+            <div>First</div>
+            <div>Second</div>
+        </div>
+        <div id="aside2">
+            <div><img src="https://via.placeholder.com/60" />Aside 1</div>
+            <div><img src="https://via.placeholder.com/60" />Aside 2</div>
+            <div><img src="https://via.placeholder.com/60" />Aside 3</div>
+            <div><img src="https://via.placeholder.com/60" />Aside 4</div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"><H2>Footer</H2></div>
+</body>
+</html>
