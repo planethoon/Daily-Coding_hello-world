@@ -14,6 +14,35 @@
 
     gtag('config', 'G-LZJ4XVKFX6');
   </script>
+  <script>
+    function nightDayHandler(self){
+      let target = document.querySelector('body');
+      if(self.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        self.value = 'day';
+
+        let aList = document.querySelectorAll('a');
+        let i = 0;
+        while(i < aList.length){
+          aList[i].style.color = 'powderblue';
+          i = i + 1;
+        }
+      } else {
+
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';    
+        self.value = 'night';
+
+        let aList = document.querySelectorAll('a');
+        let i = 0;
+        while(i < aList.length){
+          aList[i].style.color = 'blue';
+          i = i + 1;
+        }
+      }
+    }
+  </script>
   <style>
     a:hover {
      background-color: red;
@@ -25,17 +54,8 @@
   <h1><a href="index.html">Vision</a></h1>
 
   <input type="button" value="night" onclick="
-  var target = document.querySelector('body');
-  if(this.value === 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'day';
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';    
-    this.value = 'night';
-  }
-" />
+    nightDayHandler(this);
+  " />
 
   
 
