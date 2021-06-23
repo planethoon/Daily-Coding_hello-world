@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Object</h1>
+  <h2>Create</h2>
+  <script>
+    let coworkers = {
+      "programmer": "sunghoon",
+      "designer": "planet"
+    };
+    document.write("programmer : "+coworkers.programmer+"<br/>"); 
+    document.write("designer : "+coworkers.designer+"<br/>");
+    coworkers.bookkeeper = "shin";
+    document.write("bookkeeper : "+coworkers.bookkeeper+"<br/>");
+    coworkers['data scientist'] = 'planethoon';
+    document.write("data scientist : "+coworkers["data scientist"]+"<br/>");
+    
+  </script>
+  <h2>Interate</h2>
+  <script>
+    for(let key in coworkers){
+      document.write(coworkers[key]+'<br/>');
+      console.log(key);
+    }  
+  </script>
+  <h2>Property & Method</h2>
+  <script>
+    coworkers.showAll = function(){
+      for(let key in this){
+        document.write(this[key]+'<br/>');
+      }  
+    }
+  </script>
+</body>
+</html>
